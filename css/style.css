@@ -253,8 +253,13 @@ header {
   height: 5px;
   display: inline-block;
   margin-left: 4px;
-  margin-bottom: 2px;
+  margin-bottom: -3px;
   transition: 400ms ease;
+}
+@media (max-width: 1200px) {
+  .nav .nav__items .nav__about::after {
+    margin-bottom: 2px;
+  }
 }
 .nav .nav__items .nav__about:hover.nav__about::after {
   filter: invert(77%) sepia(19%) saturate(923%) hue-rotate(77deg) brightness(89%) contrast(86%);
@@ -343,13 +348,14 @@ header {
 }
 .sub .sub__nav {
   padding: 0;
-  margin-right: 3rem;
+  width: 28%;
 }
 @media (max-width: 1200px) {
   .sub .sub__nav {
     width: 100%;
     margin-right: 0;
     padding-right: 1rem;
+    width: 100%;
   }
 }
 .sub .sub__nav li {
@@ -384,13 +390,14 @@ header {
   background: #FFFFFF;
   box-shadow: inset 0px 6px 15px rgba(14, 69, 21, 0.05);
   border-radius: 12px;
-  width: 100%;
   height: 100%;
   min-height: 420px;
+  width: 70%;
 }
 @media (max-width: 1200px) {
   .sub .sub__content {
     min-height: 200px;
+    width: 100%;
   }
 }
 .sub .sub__content .sub__contentItem.active {
